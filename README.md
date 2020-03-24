@@ -1,2 +1,3 @@
-# most_simple_RESTfulAPI
-超単純なRESTfulAPIのサンプルです
+# most_simple_RESTful_API
+
+超単純な RESTful API のサンプルです
