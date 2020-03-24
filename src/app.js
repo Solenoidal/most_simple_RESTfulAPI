@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import path from 'path';
 import pug from 'pug';
 import logger from 'morgan';
+import cors from 'cors';
 import indexRouter from './api/index';
 
 const app = express();
@@ -13,6 +14,7 @@ app.set('view engine', pug);
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 
 app.use('/', indexRouter);
 
